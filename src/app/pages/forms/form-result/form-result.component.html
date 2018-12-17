@@ -1,0 +1,15 @@
+<h1 class="title">
+    Forms Result
+</h1>
+<nb-card>
+    <nb-card-header>
+        You can click the data to view the result.
+    </nb-card-header>
+    <nb-card-body>
+        <div class="full-width margin">
+            <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <ng2-smart-table [settings]="resultFormsSettings" [source]="resultForms" (userRowSelect)="resultForm($event)">
+        </ng2-smart-table>
+    </nb-card-body>
+</nb-card>
